@@ -15,7 +15,7 @@
   },
   "InputPins":[
     {
-      "Name":"IN",
+      "Name":"Data In",
       "ID":1142201962,
       "Position":{
         "x":-11.19539,
@@ -26,7 +26,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"IN",
+      "Name":"Write",
       "ID":2107518268,
       "Position":{
         "x":-11.19539,
@@ -37,7 +37,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"IN",
+      "Name":"Clock",
       "ID":1566236010,
       "Position":{
         "x":-11.2496,
@@ -50,7 +50,7 @@
   ],
   "OutputPins":[
     {
-      "Name":"OUT",
+      "Name":"Data out",
       "ID":1009141092,
       "Position":{
         "x":4.6651,

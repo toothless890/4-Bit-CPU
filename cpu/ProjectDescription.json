@@ -2,8 +2,8 @@
   "ProjectName": "cpu",
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
-  "CreationTime": "2025-08-01T20:06:43.623-07:00",
-  "LastSaveTime": "2025-08-05T12:36:25.206-07:00",
+  "CreationTime": "2025-08-02T12:06:43.623+09:00",
+  "LastSaveTime": "2025-08-06T06:00:19.257+09:00",
   "Prefs_MainPinNamesDisplayMode": 1,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 0,
@@ -73,14 +73,6 @@
       "IsCollection":false
     },
     {
-      "Name":"4 bit Async block",
-      "IsCollection":false
-    },
-    {
-      "Name":"16 block row",
-      "IsCollection":false
-    },
-    {
       "Name":"4x4-OR",
       "IsCollection":false
     },
@@ -98,10 +90,6 @@
     },
     {
       "Name":"4-Toggle",
-      "IsCollection":false
-    },
-    {
-      "Name":"4-256 RAM",
       "IsCollection":false
     },
     {
