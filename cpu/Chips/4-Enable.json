@@ -15,7 +15,7 @@
   },
   "InputPins":[
     {
-      "Name":"IN",
+      "Name":"Data",
       "ID":1712182746,
       "Position":{
         "x":-15.09814,
@@ -26,7 +26,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"IN",
+      "Name":"Enable",
       "ID":1935304209,
       "Position":{
         "x":-15.09814,
@@ -39,7 +39,7 @@
   ],
   "OutputPins":[
     {
-      "Name":"OUT",
+      "Name":"Data Out",
       "ID":962514806,
       "Position":{
         "x":6.502,
