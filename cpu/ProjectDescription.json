@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-08-02T12:06:43.623+09:00",
-  "LastSaveTime": "2025-08-06T06:06:11.338+09:00",
+  "LastSaveTime": "2025-08-06T06:56:40.582+09:00",
   "Prefs_MainPinNamesDisplayMode": 1,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 0,
@@ -34,7 +34,17 @@
     "4 bit Register",
     "4-256 Synchronous",
     "4 bit eqals",
-    "8 bit register"
+    "8 bit register",
+    "8-enable",
+    "256-4 ROM",
+    "Add 1",
+    "add 4",
+    "add 8",
+    "Add+S 4",
+    "Not 4",
+    "Negate 4",
+    "Negate 8",
+    "Add+S 8"
   ],
   "StarredList":[
     {
@@ -60,42 +70,50 @@
     {
       "Name":"Toggles",
       "IsCollection":true
+    },
+    {
+      "Name":"BUS",
+      "IsCollection":true
+    },
+    {
+      "Name":"Arithmetic",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
     {
       "Chips":["CLOCK","PULSE","KEY","3-STATE BUFFER"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"BASIC"
     },
     {
       "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
       "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
     {
       "Chips":["BUS-1","BUS-4","BUS-8"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"BUS"
     },
     {
       "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"DISPLAY"
     },
     {
-      "Chips":["ROM 256×16","4-256 RAM","4-256 Synchronous","1 bit Register","4 bit Register","8 bit register","Data Latch"],
+      "Chips":["ROM 256×16","4-256 RAM","4-256 Synchronous","1 bit Register","4 bit Register","8 bit register","Data Latch","256-4 ROM"],
       "IsToggledOpen":false,
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUZZER","4 bit Async block","16 block row","4x4-OR","4-OR","4 bit eqals"],
-      "IsToggledOpen":true,
+      "Chips":["BUZZER","4 bit Async block","16 block row","4x4-OR","4-OR"],
+      "IsToggledOpen":false,
       "Name":"OTHER"
     },
     {
@@ -104,7 +122,7 @@
       "Name":"Decoders"
     },
     {
-      "Chips":["4-Toggle","8-Toggle","4-Enable"],
+      "Chips":["4-Toggle","8-Toggle","4-Enable","8-enable"],
       "IsToggledOpen":false,
       "Name":"Toggles"
     },
@@ -112,6 +130,11 @@
       "Chips":["NAND","AND","OR","XOR","NOT","NOR"],
       "IsToggledOpen":false,
       "Name":"Basic Gates"
+    },
+    {
+      "Chips":["Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals"],
+      "IsToggledOpen":false,
+      "Name":"Arithmetic"
     }
   ]
 }
