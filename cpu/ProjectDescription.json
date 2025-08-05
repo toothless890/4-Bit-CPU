@@ -1,0 +1,176 @@
+{
+  "ProjectName": "cpu",
+  "DLSVersion_LastSaved": "2.1.6",
+  "DLSVersion_EarliestCompatible": "2.0.0",
+  "CreationTime": "2025-08-01T20:06:43.623-07:00",
+  "LastSaveTime": "2025-08-05T12:36:25.206-07:00",
+  "Prefs_MainPinNamesDisplayMode": 1,
+  "Prefs_ChipPinNamesDisplayMode": 1,
+  "Prefs_GridDisplayMode": 0,
+  "Prefs_Snapping": 0,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": false,
+  "Prefs_SimTargetStepsPerSecond": 1000,
+  "Prefs_SimStepsPerClockTick": 250,
+  "AllCustomChipNames":[
+    "NOT",
+    "AND",
+    "OR",
+    "XOR",
+    "Data Latch",
+    "4 bit Async block",
+    "16 block row",
+    "4x4-OR",
+    "4-OR",
+    "4-16 Decoder",
+    "2-4 Decoder",
+    "3-8 Decoder",
+    "4-Enable",
+    "8-Toggle",
+    "4-Toggle",
+    "NOR",
+    "4-256 RAM",
+    "1 bit Register",
+    "4 bit Register",
+    "4-256 Synchronous",
+    "4 bit eqals"
+  ],
+  "StarredList":[
+    {
+      "Name":"IN/OUT",
+      "IsCollection":true
+    },
+    {
+      "Name":"MERGE/SPLIT",
+      "IsCollection":true
+    },
+    {
+      "Name":"NAND",
+      "IsCollection":false
+    },
+    {
+      "Name":"NOT",
+      "IsCollection":false
+    },
+    {
+      "Name":"AND",
+      "IsCollection":false
+    },
+    {
+      "Name":"OR",
+      "IsCollection":false
+    },
+    {
+      "Name":"NOR",
+      "IsCollection":false
+    },
+    {
+      "Name":"XOR",
+      "IsCollection":false
+    },
+    {
+      "Name":"Data Latch",
+      "IsCollection":false
+    },
+    {
+      "Name":"4 bit Async block",
+      "IsCollection":false
+    },
+    {
+      "Name":"16 block row",
+      "IsCollection":false
+    },
+    {
+      "Name":"4x4-OR",
+      "IsCollection":false
+    },
+    {
+      "Name":"4-OR",
+      "IsCollection":false
+    },
+    {
+      "Name":"4-16 Decoder",
+      "IsCollection":false
+    },
+    {
+      "Name":"8-Toggle",
+      "IsCollection":false
+    },
+    {
+      "Name":"4-Toggle",
+      "IsCollection":false
+    },
+    {
+      "Name":"4-256 RAM",
+      "IsCollection":false
+    },
+    {
+      "Name":"1 bit Register",
+      "IsCollection":false
+    },
+    {
+      "Name":"4 bit Register",
+      "IsCollection":false
+    },
+    {
+      "Name":"4-256 Synchronous",
+      "IsCollection":false
+    },
+    {
+      "Name":"4 bit eqals",
+      "IsCollection":false
+    }
+  ],
+  "ChipCollections":[
+    {
+      "Chips":["CLOCK","PULSE","KEY","3-STATE BUFFER"],
+      "IsToggledOpen":true,
+      "Name":"BASIC"
+    },
+    {
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "IsToggledOpen":true,
+      "Name":"IN/OUT"
+    },
+    {
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
+      "IsToggledOpen":true,
+      "Name":"MERGE/SPLIT"
+    },
+    {
+      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "IsToggledOpen":true,
+      "Name":"BUS"
+    },
+    {
+      "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
+      "IsToggledOpen":true,
+      "Name":"DISPLAY"
+    },
+    {
+      "Chips":["ROM 256×16"],
+      "IsToggledOpen":true,
+      "Name":"MEMORY"
+    },
+    {
+      "Chips":["BUZZER","Data Latch","4 bit Async block","16 block row","4x4-OR","4-OR","4-Toggle","4-256 RAM","1 bit Register","4 bit Register","4-256 Synchronous","4 bit eqals"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    },
+    {
+      "Chips":["2-4 Decoder","3-8 Decoder","4-16 Decoder"],
+      "IsToggledOpen":true,
+      "Name":"Decoders"
+    },
+    {
+      "Chips":["8-Toggle","4-Enable"],
+      "IsToggledOpen":true,
+      "Name":"Toggles"
+    },
+    {
+      "Chips":["NAND","AND","OR","XOR","NOT","NOR"],
+      "IsToggledOpen":true,
+      "Name":"Basic Gates"
+    }
+  ]
+}
