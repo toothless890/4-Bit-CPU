@@ -3,9 +3,9 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-08-02T12:06:43.623+09:00",
-  "LastSaveTime": "2025-08-06T06:56:40.582+09:00",
-  "Prefs_MainPinNamesDisplayMode": 1,
-  "Prefs_ChipPinNamesDisplayMode": 1,
+  "LastSaveTime": "2025-08-06T07:17:23.839+09:00",
+  "Prefs_MainPinNamesDisplayMode": 2,
+  "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
   "Prefs_Snapping": 0,
   "Prefs_StraightWires": 0,
@@ -44,7 +44,9 @@
     "Not 4",
     "Negate 4",
     "Negate 8",
-    "Add+S 8"
+    "Add+S 8",
+    "8 bit offsetter",
+    "Instruction module"
   ],
   "StarredList":[
     {
@@ -78,6 +80,14 @@
     {
       "Name":"Arithmetic",
       "IsCollection":true
+    },
+    {
+      "Name":"8 bit offsetter",
+      "IsCollection":false
+    },
+    {
+      "Name":"Instruction module",
+      "IsCollection":false
     }
   ],
   "ChipCollections":[
