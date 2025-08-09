@@ -15,7 +15,7 @@
   },
   "InputPins":[
     {
-      "Name":"IN",
+      "Name":"input",
       "ID":185478020,
       "Position":{
         "x":-9.12112,
@@ -26,7 +26,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"Write",
+      "Name":"write",
       "ID":189884814,
       "Position":{
         "x":-9.10719,
