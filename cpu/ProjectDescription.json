@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-08-01T20:06:43.623-07:00",
-  "LastSaveTime": "2025-08-12T22:20:27.435-07:00",
+  "LastSaveTime": "2025-08-12T23:57:09.435-07:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -59,7 +59,12 @@
     "2 cycle clock",
     "MOVRAW OP",
     "MOV OP",
-    "6 cycle clock"
+    "6 cycle clock",
+    "NO-OP",
+    "Logical AND",
+    "Logical OR",
+    "Logical XOR",
+    "Logical Compare"
   ],
   "StarredList":[
     {
@@ -131,7 +136,27 @@
       "IsCollection":false
     },
     {
+      "Name":"NO-OP",
+      "IsCollection":false
+    },
+    {
       "Name":"CPU",
+      "IsCollection":false
+    },
+    {
+      "Name":"Logical AND",
+      "IsCollection":false
+    },
+    {
+      "Name":"Logical OR",
+      "IsCollection":false
+    },
+    {
+      "Name":"Logical XOR",
+      "IsCollection":false
+    },
+    {
+      "Name":"Logical Compare",
       "IsCollection":false
     }
   ],
@@ -143,12 +168,12 @@
     },
     {
       "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"IN/OUT"
     },
     {
       "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"MERGE/SPLIT"
     },
     {
@@ -168,12 +193,12 @@
     },
     {
       "Chips":["2-4 Decoder","3-8 Decoder","4-16 Decoder"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"Decoders"
     },
     {
       "Chips":["4-Toggle","8-Toggle","4-Enable","8-enable"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"Toggles"
     },
     {
@@ -183,16 +208,16 @@
     },
     {
       "Chips":["8 bit offsetter","Bit shifter","Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals","ALU"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"Arithmetic"
     },
     {
-      "Chips":["BUZZER","Instruction module","6cycle clock","4 Bit 3 state buffer","CU","CPU","4 register block","2 cycle clock","MOVRAW OP","MOV OP","6 cycle clock"],
+      "Chips":["BUZZER","Instruction module","6cycle clock","4 Bit 3 state buffer","CU","CPU","4 register block","2 cycle clock","6 cycle clock","Logical AND","Logical OR","Logical XOR"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
     {
-      "Chips":["OP Add+S"],
+      "Chips":["MOV OP","NO-OP","OP Add+S","MOVRAW OP"],
       "IsToggledOpen":true,
       "Name":"OPs"
     }

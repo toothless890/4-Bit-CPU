@@ -173,14 +173,14 @@
       "InternalData":null
     },
     {
-      "Name":"OR",
-      "ID":1706316532,
+      "Name":"3-STATE BUFFER",
+      "ID":577022006,
       "Label":"",
       "Position":{
-        "x":2.08953,
-        "y":-1.77957
+        "x":0.33495,
+        "y":-5.0112
       },
-      "OutputPinColourInfo":[{"PinColour":0,"PinID":281615327}],
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":2}],
       "InternalData":null
     }
   ],
@@ -299,48 +299,6 @@
     },
     {
       "SourcePinAddress":{
-        "PinID":281615327,
-        "PinOwnerID":1706316532
-      },
-      "TargetPinAddress":{
-        "PinID":0,
-        "PinOwnerID":1526186691
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":585623528,
-        "PinOwnerID":671519640
-      },
-      "TargetPinAddress":{
-        "PinID":390848654,
-        "PinOwnerID":1706316532
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":1822958297,
-        "PinOwnerID":671519640
-      },
-      "TargetPinAddress":{
-        "PinID":2143560807,
-        "PinOwnerID":1706316532
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
         "PinID":1053617233,
         "PinOwnerID":671519640
       },
@@ -388,12 +346,68 @@
       },
       "TargetPinAddress":{
         "PinID":0,
+        "PinOwnerID":577022006
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":-3.52481,"y":1.76711},{"x":-3.70799,"y":-5.53827},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":1904936155
+      },
+      "TargetPinAddress":{
+        "PinID":1,
+        "PinOwnerID":577022006
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":11,
+      "ConnectedWireSegmentIndex":2,
+      "Points":[{"x":-1.64256,"y":-5.09007},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":2,
+        "PinOwnerID":577022006
+      },
+      "TargetPinAddress":{
+        "PinID":0,
         "PinOwnerID":1094894496
       },
       "ConnectionType":0,
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":-3.69244,"y":1.73851},{"x":-3.73238,"y":-5.12279},{"x":0.0,"y":0.0}]
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":585623528,
+        "PinOwnerID":671519640
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":1526186691
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":1.67403,"y":-1.51813},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1822958297,
+        "PinOwnerID":671519640
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":1526186691
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":1.65793,"y":-1.76676},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays": null

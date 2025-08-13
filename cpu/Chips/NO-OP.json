@@ -1,0 +1,175 @@
+{
+  "DLSVersion": "2.1.6",
+  "Name": "NO-OP",
+  "NameLocation": 0,
+  "ChipType": 0,
+  "Size": {
+    "x": 1.025,
+    "y": 0.75
+  },
+  "Colour": {
+    "r": 0.255041331,
+    "g": 0.00696658064,
+    "b": 0.0348697081,
+    "a": 1
+  },
+  "InputPins":[
+    {
+      "Name":"input",
+      "ID":254622613,
+      "Position":{
+        "x":-8.31741,
+        "y":3.48944
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"clock",
+      "ID":1231225671,
+      "Position":{
+        "x":-8.31741,
+        "y":2.97444
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"clear",
+      "ID":1238490319,
+      "Position":{
+        "x":-8.31741,
+        "y":2.45944
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "OutputPins":[
+    {
+      "Name":"op end",
+      "ID":1560827960,
+      "Position":{
+        "x":1.08416,
+        "y":3.40314
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "SubChips":[
+    {
+      "Name":"6cycle clock",
+      "ID":787825476,
+      "Label":"",
+      "Position":{
+        "x":-3.62815,
+        "y":2.94492
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":585623528},{"PinColour":0,"PinID":1822958297},{"PinColour":0,"PinID":1982813351},{"PinColour":0,"PinID":1053617233},{"PinColour":0,"PinID":1541170108},{"PinColour":0,"PinID":1607134799}],
+      "InternalData":null
+    },
+    {
+      "Name":"OR",
+      "ID":90023963,
+      "Label":"",
+      "Position":{
+        "x":-5.55503,
+        "y":2.23473
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":281615327}],
+      "InternalData":null
+    }
+  ],
+  "Wires":[
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":254622613
+      },
+      "TargetPinAddress":{
+        "PinID":1530121655,
+        "PinOwnerID":787825476
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":1231225671
+      },
+      "TargetPinAddress":{
+        "PinID":923481592,
+        "PinOwnerID":787825476
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":585623528,
+        "PinOwnerID":787825476
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":1560827960
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":1238490319
+      },
+      "TargetPinAddress":{
+        "PinID":390848654,
+        "PinOwnerID":90023963
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1822958297,
+        "PinOwnerID":787825476
+      },
+      "TargetPinAddress":{
+        "PinID":2143560807,
+        "PinOwnerID":90023963
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":-1.39194,"y":3.31992},{"x":-1.39194,"y":1.49427},{"x":-6.50586,"y":1.49427},{"x":-6.50586,"y":2.14645},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":281615327,
+        "PinOwnerID":90023963
+      },
+      "TargetPinAddress":{
+        "PinID":342996747,
+        "PinOwnerID":787825476
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    }
+  ],
+  "Displays": null
+}
