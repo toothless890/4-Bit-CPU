@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-08-01T20:06:43.623-07:00",
-  "LastSaveTime": "2025-08-08T20:26:46.805-07:00",
+  "LastSaveTime": "2025-08-12T18:04:22.051-07:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -48,7 +48,11 @@
     "8 bit offsetter",
     "Instruction module",
     "shift buffer",
-    "4 cycle clock"
+    "4 cycle clock",
+    "Bit shifter",
+    "4 Bit 3 state buffer",
+    "ALU",
+    "CU"
   ],
   "StarredList":[
     {
@@ -88,22 +92,18 @@
       "IsCollection":false
     },
     {
-      "Name":"shift buffer",
+      "Name":"ALU",
       "IsCollection":false
     },
     {
-      "Name":"4 cycle clock",
-      "IsCollection":false
-    },
-    {
-      "Name":"8 bit offsetter",
+      "Name":"CU",
       "IsCollection":false
     }
   ],
   "ChipCollections":[
     {
-      "Chips":["CLOCK","PULSE","KEY","3-STATE BUFFER"],
-      "IsToggledOpen":false,
+      "Chips":["CLOCK","PULSE","KEY","4x4-OR"],
+      "IsToggledOpen":true,
       "Name":"BASIC"
     },
     {
@@ -118,21 +118,21 @@
     },
     {
       "Chips":["BUS-1","BUS-4","BUS-8"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"BUS"
     },
     {
       "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"DISPLAY"
     },
     {
-      "Chips":["ROM 256×16","4-256 RAM","4-256 Synchronous","1 bit Register","4 bit Register","8 bit register","Data Latch","256-4 ROM"],
-      "IsToggledOpen":false,
+      "Chips":["3-STATE BUFFER","Data Latch","ROM 256×16","4-256 RAM","4-256 Synchronous","1 bit Register","4 bit Register","8 bit register","256-4 ROM","4 bit Async block","16 block row","shift buffer"],
+      "IsToggledOpen":true,
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUZZER","4 bit Async block","16 block row","4x4-OR","4-OR","8 bit offsetter","Instruction module","shift buffer","4 cycle clock"],
+      "Chips":["BUZZER","Instruction module","4 cycle clock","4 Bit 3 state buffer","CU"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
@@ -147,13 +147,13 @@
       "Name":"Toggles"
     },
     {
-      "Chips":["NAND","AND","OR","XOR","NOT","NOR"],
-      "IsToggledOpen":false,
+      "Chips":["4-OR","NAND","AND","OR","XOR","NOT","NOR"],
+      "IsToggledOpen":true,
       "Name":"Basic Gates"
     },
     {
-      "Chips":["Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals"],
-      "IsToggledOpen":false,
+      "Chips":["8 bit offsetter","Bit shifter","Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals","ALU"],
+      "IsToggledOpen":true,
       "Name":"Arithmetic"
     }
   ]
