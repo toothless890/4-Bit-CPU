@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-08-01T20:06:43.623-07:00",
-  "LastSaveTime": "2025-08-12T18:04:22.051-07:00",
+  "LastSaveTime": "2025-08-12T22:20:27.435-07:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -48,11 +48,18 @@
     "8 bit offsetter",
     "Instruction module",
     "shift buffer",
-    "4 cycle clock",
+    "6cycle clock",
     "Bit shifter",
     "4 Bit 3 state buffer",
     "ALU",
-    "CU"
+    "CU",
+    "OP Add+S",
+    "CPU",
+    "4 register block",
+    "2 cycle clock",
+    "MOVRAW OP",
+    "MOV OP",
+    "6 cycle clock"
   ],
   "StarredList":[
     {
@@ -98,6 +105,34 @@
     {
       "Name":"CU",
       "IsCollection":false
+    },
+    {
+      "Name":"6cycle clock",
+      "IsCollection":false
+    },
+    {
+      "Name":"4 register block",
+      "IsCollection":false
+    },
+    {
+      "Name":"2 cycle clock",
+      "IsCollection":false
+    },
+    {
+      "Name":"MOVRAW OP",
+      "IsCollection":false
+    },
+    {
+      "Name":"MOV OP",
+      "IsCollection":false
+    },
+    {
+      "Name":"6 cycle clock",
+      "IsCollection":false
+    },
+    {
+      "Name":"CPU",
+      "IsCollection":false
     }
   ],
   "ChipCollections":[
@@ -132,11 +167,6 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUZZER","Instruction module","4 cycle clock","4 Bit 3 state buffer","CU"],
-      "IsToggledOpen":true,
-      "Name":"OTHER"
-    },
-    {
       "Chips":["2-4 Decoder","3-8 Decoder","4-16 Decoder"],
       "IsToggledOpen":false,
       "Name":"Decoders"
@@ -148,13 +178,23 @@
     },
     {
       "Chips":["4-OR","NAND","AND","OR","XOR","NOT","NOR"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"Basic Gates"
     },
     {
       "Chips":["8 bit offsetter","Bit shifter","Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals","ALU"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"Arithmetic"
+    },
+    {
+      "Chips":["BUZZER","Instruction module","6cycle clock","4 Bit 3 state buffer","CU","CPU","4 register block","2 cycle clock","MOVRAW OP","MOV OP","6 cycle clock"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    },
+    {
+      "Chips":["OP Add+S"],
+      "IsToggledOpen":true,
+      "Name":"OPs"
     }
   ]
 }

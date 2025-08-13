@@ -80,7 +80,7 @@
       },
       "BitCount":4,
       "Colour":0,
-      "ValueDisplayMode":0
+      "ValueDisplayMode":1
     }
   ],
   "SubChips":[
@@ -164,10 +164,10 @@
     {
       "Name":"LED",
       "ID":1253427158,
-      "Label":"",
+      "Label":"3",
       "Position":{
-        "x":2.87666,
-        "y":3.10625
+        "x":3.0286,
+        "y":3.10017
       },
       "OutputPinColourInfo":[],
       "InternalData":[0]
@@ -175,7 +175,7 @@
     {
       "Name":"LED",
       "ID":863859354,
-      "Label":"",
+      "Label":"2",
       "Position":{
         "x":3.0242,
         "y":2.66334
@@ -186,7 +186,7 @@
     {
       "Name":"LED",
       "ID":234850776,
-      "Label":"",
+      "Label":"1",
       "Position":{
         "x":3.03619,
         "y":2.29729
@@ -197,7 +197,7 @@
     {
       "Name":"LED",
       "ID":1398021209,
-      "Label":"",
+      "Label":"4",
       "Position":{
         "x":3.01332,
         "y":3.55633
@@ -619,39 +619,39 @@
       "ConnectionType":1,
       "ConnectedWireIndex":24,
       "ConnectedWireSegmentIndex":1,
-      "Points":[{"x":-1.96947,"y":-0.91422},{"x":0.0,"y":0.0}]
+      "Points":[{"x":-1.96948,"y":-0.91422},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays":[
     {
-      "SubChipID":1253427158,
+      "SubChipID":234850776,
       "Position":{
-        "x":0.6625,
-        "y":0.4
-      },
-      "Scale":1.0
-    },
-    {
-      "SubChipID":1398021209,
-      "Position":{
-        "x":0.68125,
-        "y":0.10625
+        "x":0.65625,
+        "y":-0.40625
       },
       "Scale":1.0
     },
     {
       "SubChipID":863859354,
       "Position":{
-        "x":0.675,
+        "x":0.65625,
         "y":-0.15625
       },
       "Scale":1.0
     },
     {
-      "SubChipID":234850776,
+      "SubChipID":1253427158,
       "Position":{
-        "x":0.68125,
-        "y":-0.4
+        "x":0.65625,
+        "y":0.09375
+      },
+      "Scale":1.0
+    },
+    {
+      "SubChipID":1398021209,
+      "Position":{
+        "x":0.65625,
+        "y":0.34375
       },
       "Scale":1.0
     }
