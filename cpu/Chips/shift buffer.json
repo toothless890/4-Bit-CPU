@@ -50,7 +50,7 @@
   ],
   "OutputPins":[
     {
-      "Name":"OUT",
+      "Name":"signal",
       "ID":514957085,
       "Position":{
         "x":8.02565,
@@ -61,7 +61,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"OUT",
+      "Name":"clock invert",
       "ID":1292945795,
       "Position":{
         "x":6.31388,
