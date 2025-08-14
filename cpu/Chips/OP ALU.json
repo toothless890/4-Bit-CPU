@@ -1,6 +1,6 @@
 {
   "DLSVersion": "2.1.6",
-  "Name": "OP Add+S",
+  "Name": "OP ALU",
   "NameLocation": 0,
   "ChipType": 0,
   "Size": {
@@ -14,17 +14,6 @@
     "a": 1
   },
   "InputPins":[
-    {
-      "Name":"subtract",
-      "ID":1904936155,
-      "Position":{
-        "x":-5.5775,
-        "y":1.70656
-      },
-      "BitCount":1,
-      "Colour":0,
-      "ValueDisplayMode":0
-    },
     {
       "Name":"Select",
       "ID":1905965515,
@@ -83,7 +72,7 @@
       "ValueDisplayMode":0
     },
     {
-      "Name":"Read Adder",
+      "Name":"ReadALU",
       "ID":290692441,
       "Position":{
         "x":2.26875,
@@ -136,17 +125,6 @@
       "BitCount":1,
       "Colour":0,
       "ValueDisplayMode":0
-    },
-    {
-      "Name":"subtract",
-      "ID":1094894496,
-      "Position":{
-        "x":3.79172,
-        "y":-4.61138
-      },
-      "BitCount":1,
-      "Colour":0,
-      "ValueDisplayMode":0
     }
   ],
   "SubChips":[
@@ -159,17 +137,6 @@
         "y":-1.96472
       },
       "OutputPinColourInfo":[{"PinColour":0,"PinID":585623528},{"PinColour":0,"PinID":1822958297},{"PinColour":0,"PinID":1982813351},{"PinColour":0,"PinID":1053617233},{"PinColour":0,"PinID":1541170108},{"PinColour":0,"PinID":1607134799}],
-      "InternalData":null
-    },
-    {
-      "Name":"3-STATE BUFFER",
-      "ID":577022006,
-      "Label":"",
-      "Position":{
-        "x":0.33495,
-        "y":-5.0112
-      },
-      "OutputPinColourInfo":[{"PinColour":0,"PinID":2}],
       "InternalData":null
     }
   ],
@@ -285,48 +252,6 @@
       "ConnectedWireIndex":4,
       "ConnectedWireSegmentIndex":1,
       "Points":[{"x":1.08323,"y":-1.99378},{"x":1.03882,"y":-3.64082},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":0,
-        "PinOwnerID":1904936155
-      },
-      "TargetPinAddress":{
-        "PinID":0,
-        "PinOwnerID":577022006
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":-3.52481,"y":1.76711},{"x":-3.70799,"y":-5.53827},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":0,
-        "PinOwnerID":1904936155
-      },
-      "TargetPinAddress":{
-        "PinID":1,
-        "PinOwnerID":577022006
-      },
-      "ConnectionType":1,
-      "ConnectedWireIndex":8,
-      "ConnectedWireSegmentIndex":2,
-      "Points":[{"x":-1.64256,"y":-5.09007},{"x":0.0,"y":0.0}]
-    },
-    {
-      "SourcePinAddress":{
-        "PinID":2,
-        "PinOwnerID":577022006
-      },
-      "TargetPinAddress":{
-        "PinID":0,
-        "PinOwnerID":1094894496
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
     },
     {
       "SourcePinAddress":{

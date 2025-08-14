@@ -1,11 +1,11 @@
 {
   "DLSVersion": "2.1.6",
-  "Name": "NO-OP",
+  "Name": "ReadRAM OP",
   "NameLocation": 0,
   "ChipType": 0,
   "Size": {
-    "x": 1.025,
-    "y": 1.0
+    "x": 1.25,
+    "y": 1.25
   },
   "Colour": {
     "r": 0.255041331,
@@ -50,11 +50,55 @@
   ],
   "OutputPins":[
     {
+      "Name":"ld reg 1",
+      "ID":1560827960,
+      "Position":{
+        "x":0.97708,
+        "y":4.71985
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"Read RAM",
+      "ID":689088918,
+      "Position":{
+        "x":0.97067,
+        "y":4.10942
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"MEM Pause",
+      "ID":750828705,
+      "Position":{
+        "x":1.0,
+        "y":3.375
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
+      "Name":"write reg 1",
+      "ID":361398440,
+      "Position":{
+        "x":1.0,
+        "y":2.625
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    },
+    {
       "Name":"OP end",
       "ID":654876637,
       "Position":{
-        "x":1.00789,
-        "y":2.78728
+        "x":1.0,
+        "y":1.8125
       },
       "BitCount":1,
       "Colour":0,
@@ -110,26 +154,68 @@
       },
       "TargetPinAddress":{
         "PinID":0,
+        "PinOwnerID":1560827960
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":-2.0625,"y":3.5625},{"x":-2.0625,"y":4.6875},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1982813351,
+        "PinOwnerID":787825476
+      },
+      "TargetPinAddress":{
+        "PinID":0,
         "PinOwnerID":654876637
       },
       "ConnectionType":0,
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.25,"y":3.5625},{"x":0.0,"y":0.0}]
+      "Points":[{"x":0.0,"y":0.0},{"x":-1.45551,"y":3.08135},{"x":-1.4375,"y":1.8125},{"x":0.0,"y":0.0}]
     },
     {
       "SourcePinAddress":{
-        "PinID":585623528,
+        "PinID":1822958297,
         "PinOwnerID":787825476
       },
       "TargetPinAddress":{
-        "PinID":1414528344,
+        "PinID":0,
+        "PinOwnerID":689088918
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":-0.9375,"y":3.3125},{"x":-0.9375,"y":4.1875},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1822958297,
         "PinOwnerID":787825476
       },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":750828705
+      },
       "ConnectionType":1,
-      "ConnectedWireIndex":2,
+      "ConnectedWireIndex":4,
       "ConnectedWireSegmentIndex":0,
-      "Points":[{"x":-1.39639,"y":3.56699},{"x":-1.39639,"y":1.67557},{"x":-5.93415,"y":1.67557},{"x":-5.93415,"y":2.34958},{"x":0.0,"y":0.0}]
+      "Points":[{"x":-1.0,"y":3.3128},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1822958297,
+        "PinOwnerID":787825476
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":361398440
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":5,
+      "ConnectedWireSegmentIndex":0,
+      "Points":[{"x":-0.68829,"y":3.32831},{"x":-0.6875,"y":2.625},{"x":0.0,"y":0.0}]
     },
     {
       "SourcePinAddress":{
@@ -144,6 +230,20 @@
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
       "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":1982813351,
+        "PinOwnerID":787825476
+      },
+      "TargetPinAddress":{
+        "PinID":1414528344,
+        "PinOwnerID":787825476
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":3,
+      "ConnectedWireSegmentIndex":1,
+      "Points":[{"x":-1.4375,"y":1.8125},{"x":-5.58765,"y":1.8125},{"x":-5.58765,"y":2.35908},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays": null
