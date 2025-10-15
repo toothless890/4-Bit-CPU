@@ -5,7 +5,7 @@
   "ChipType": 0,
   "Size": {
     "x": 1.85,
-    "y": 1.5
+    "y": 1.75
   },
   "Colour": {
     "r": 0.08876947,
@@ -68,6 +68,17 @@
       "BitCount":1,
       "Colour":0,
       "ValueDisplayMode":0
+    },
+    {
+      "Name":"offset-bypass",
+      "ID":761498106,
+      "Position":{
+        "x":-12.48201,
+        "y":-0.20716
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
     }
   ],
   "OutputPins":[
@@ -100,28 +111,14 @@
       "ID":985401090,
       "Label":"",
       "Position":{
-        "x":-8.25702,
-        "y":2.91525
+        "x":-8.19594,
+        "y":3.60241
       },
       "OutputPinColourInfo":[{"PinColour":0,"PinID":200910699}],
       "InternalData":null
     }
   ],
   "Wires":[
-    {
-      "SourcePinAddress":{
-        "PinID":200910699,
-        "PinOwnerID":985401090
-      },
-      "TargetPinAddress":{
-        "PinID":2018419717,
-        "PinOwnerID":1908452521
-      },
-      "ConnectionType":0,
-      "ConnectedWireIndex":-1,
-      "ConnectedWireSegmentIndex":-1,
-      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
-    },
     {
       "SourcePinAddress":{
         "PinID":0,
@@ -205,6 +202,34 @@
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
       "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":200910699,
+        "PinOwnerID":985401090
+      },
+      "TargetPinAddress":{
+        "PinID":2018419717,
+        "PinOwnerID":1908452521
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":761498106
+      },
+      "TargetPinAddress":{
+        "PinID":1141860698,
+        "PinOwnerID":985401090
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":-9.69509,"y":-0.26306},{"x":-9.43995,"y":2.71742},{"x":0.0,"y":0.0}]
     }
   ],
   "Displays": null

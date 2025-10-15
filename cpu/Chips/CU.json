@@ -776,6 +776,17 @@
       },
       "OutputPinColourInfo":[{"PinColour":0,"PinID":1532329061},{"PinColour":0,"PinID":664048859},{"PinColour":0,"PinID":1050384889},{"PinColour":0,"PinID":290692441},{"PinColour":0,"PinID":1957280547},{"PinColour":0,"PinID":1687380278}],
       "InternalData":null
+    },
+    {
+      "Name":"3-STATE BUFFER",
+      "ID":714379619,
+      "Label":"",
+      "Position":{
+        "x":32.57577,
+        "y":-23.05247
+      },
+      "OutputPinColourInfo":[{"PinColour":0,"PinID":2}],
+      "InternalData":null
     }
   ],
   "Wires":[
@@ -2920,6 +2931,48 @@
       "ConnectedWireIndex":-1,
       "ConnectedWireSegmentIndex":-1,
       "Points":[{"x":0.0,"y":0.0},{"x":9.625,"y":-1.3125},{"x":9.8125,"y":-27.4375},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":290692441,
+        "PinOwnerID":1727563208
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":714379619
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":148,
+      "ConnectedWireSegmentIndex":2,
+      "Points":[{"x":31.6417,"y":-23.51939},{"x":31.6417,"y":-22.84801},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":290692441,
+        "PinOwnerID":1727563208
+      },
+      "TargetPinAddress":{
+        "PinID":1,
+        "PinOwnerID":714379619
+      },
+      "ConnectionType":1,
+      "ConnectedWireIndex":153,
+      "ConnectedWireSegmentIndex":0,
+      "Points":[{"x":31.6417,"y":-23.23997},{"x":0.0,"y":0.0}]
+    },
+    {
+      "SourcePinAddress":{
+        "PinID":2,
+        "PinOwnerID":714379619
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":312195889
+      },
+      "ConnectionType":2,
+      "ConnectedWireIndex":34,
+      "ConnectedWireSegmentIndex":0,
+      "Points":[{"x":0.0,"y":0.0},{"x":33.03037,"y":-13.14168}]
     }
   ],
   "Displays": null
