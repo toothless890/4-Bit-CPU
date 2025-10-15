@@ -22,11 +22,11 @@ for line in linearr:
             print(str(lineCounter) , "\t: " ,line.lower())
             lineCounter +=1
             for arg in splitLine:
-                
+
                 code = opcodes.get(arg, "err")
                 if code == "err":
                     code = registers.get(arg, "err")
-                else: 
+                if code == "err":
                     code = arg
 
                 print(code)
