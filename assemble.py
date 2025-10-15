@@ -8,8 +8,10 @@ opcodes = {"nop" : "0000", "halt" : "0001", "write":"0010", "read" : "0011", "ad
            "xor" : "1000", "mov" : "1001", "movraw" : "1010", "cmp": "1011", "shift" : "1100", "jmp" : "1101"}
 
 registers = {"r0" : "0000", "r1" : "0001", "r2":"0010", "r3" : "0011", "r4" : "0100", "r5" : "0101", "r6" : "0110", "r7" : "0111", 
-             "invalid" : "1000", "invalid" : "1001", "invalid" : "invalid", "rc": "1011", "rsl" : "1100", "rsh" : "1101"}
+             "invalid" : "1000", "invalid" : "1001", "invalid" : "invalid", "1010" : "invalid", "1011" : "invalid","1100" : "invalid",
+             "rc": "1101", "rsl" : "1110", "rsh" : "1111"}
 lineCounter = 0
+
 
 for line in linearr:
     if(line != ""):
@@ -19,7 +21,7 @@ for line in linearr:
         else: 
             
             splitLine = line.split()
-            print(str(lineCounter) , "\t: " ,line.lower())
+            # print(str(lineCounter) , "\t: " ,line.lower())
             lineCounter +=1
             for arg in splitLine:
 
