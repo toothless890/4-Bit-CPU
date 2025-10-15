@@ -1,11 +1,18 @@
 movraw rc 1111 // enable carry
-movraw r1 0001 // r1 = 1
-movraw r2 0111 // r2 = 7
-movraw r3 0101 //r 3 = 5
-movraw r6 0010
-movraw r7 0001 // jump to line 18
-// loop start
-add r0 r1 // r0 +=r1 (1) 
-cmp r0 r3
-jmp 0011 r7 r6 // if r0 <= r3(5) then go back to loop start
-halt
+movraw r0 0001 // r0, 1, 2 is x
+movraw r6 0100 // variable to control loop
+movraw rsh 0000 //
+movraw rsl 1111
+//loop begin
+// x+= y
+add r0 r3 // make use of carry to use 3 registers per 'variable'
+add r1 r4
+add r2 r5
+// y = x
+mov r3 r0
+mov r4 r1
+mov r5 r2
+
+cmp r2 r6
+jmp 0011 rsh rsl // jump to stack pos if less than or equal to control
+halt // stop after exectution
