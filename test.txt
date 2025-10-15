@@ -1,0 +1,45 @@
+// 0000 No-operation. takes no arguments
+nop
+
+// 0001 Halt. Takes no arguments
+halt
+
+// 0010 Write. Pushes provided register to the memory at the given location (currently doesnt change mem pointer or clear data)
+write r0
+
+// 0011 Read memory. Reads memory from given location (currently doesnt change mem pointer)
+read r1
+
+// 0100 Add. adds two registers together, returning the result into the first. (r1 = r1+r2)
+add r1 r2
+
+// 0101 Subtract. (r1 = r1-r2)
+sub r1 r2
+
+// 0110 AND. Bitwise and ; r1 = r1 & r2
+and r1 r2
+
+// 0111 or. Bitwise or; r1 = r1 | r2
+or r1 r2
+
+// 1000 xor. Bitwise xor; r1 = r1 ^ r2
+xor r1 r2
+
+// 1001 move. Move r2 into r1 (might be able to reduce this by a clock cycle)
+mov r1 r2
+
+// 1010 move raw. Move a raw value into r1 
+movraw r1 4
+
+// 1011 compare. compares r1 to r2 and sets flags [equals, less than?, greater than?, always true] (used for jumping/ conditionals/ loops)
+cmp r1 r2
+
+// 1100 bitshift. Shifts r1 an r2 amount (r2 is treated as signed, + is lShift, - is rShift)
+shift r1 r2
+
+// 1101 jump. Jumps to offset pointer based on compare results( r1 is high order bits, r2 is low order bits)
+jmp r1 r2
+
+// 1110 unbound (halt)
+
+// 1111 unbound (halt)
