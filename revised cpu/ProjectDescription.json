@@ -1,0 +1,186 @@
+{
+  "ProjectName": "revised cpu",
+  "DLSVersion_LastSaved": "2.1.6",
+  "DLSVersion_EarliestCompatible": "2.0.0",
+  "CreationTime": "2025-08-01T20:06:43.623-07:00",
+  "LastSaveTime": "2025-08-21T16:08:08.775-07:00",
+  "Prefs_MainPinNamesDisplayMode": 2,
+  "Prefs_ChipPinNamesDisplayMode": 2,
+  "Prefs_GridDisplayMode": 0,
+  "Prefs_Snapping": 0,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": false,
+  "Prefs_SimTargetStepsPerSecond": 1000,
+  "Prefs_SimStepsPerClockTick": 40,
+  "AllCustomChipNames":[
+    "NOT",
+    "AND",
+    "OR",
+    "XOR",
+    "Data Latch",
+    "4 bit Async block",
+    "16 block row",
+    "4x4-OR",
+    "4-OR",
+    "4-16 Decoder",
+    "2-4 Decoder",
+    "3-8 Decoder",
+    "4-Enable",
+    "8-Toggle",
+    "4-Toggle",
+    "NOR",
+    "4-256 RAM",
+    "1 bit Register",
+    "4 bit Register",
+    "4-256 Synchronous",
+    "4 bit eqals",
+    "8 bit register",
+    "8-enable",
+    "256-4 ROM",
+    "Add 1",
+    "add 4",
+    "add 8",
+    "Add+S 4",
+    "Not 4",
+    "Negate 4",
+    "Negate 8",
+    "Add+S 8",
+    "8 bit offsetter",
+    "Instruction module",
+    "shift buffer",
+    "6cycle clock",
+    "Bit shifter",
+    "4 Bit 3 state buffer",
+    "ALU",
+    "CU",
+    "OP Add+S",
+    "CPU",
+    "4 register block",
+    "2 cycle clock",
+    "MOVRAW OP",
+    "MOV OP",
+    "6 cycle clock",
+    "NO-OP",
+    "Logical AND",
+    "Logical OR",
+    "Logical XOR",
+    "Logical Compare",
+    "8 register block",
+    "Memory Manager",
+    "push OP",
+    "ReadRAM OP",
+    "3 cycle clock",
+    "OP ALU",
+    "Offsetter",
+    "OP JUMP",
+    "clocker"
+  ],
+  "StarredList":[
+    {
+      "Name":"IN/OUT",
+      "IsCollection":true
+    },
+    {
+      "Name":"MERGE/SPLIT",
+      "IsCollection":true
+    },
+    {
+      "Name":"Basic Gates",
+      "IsCollection":true
+    },
+    {
+      "Name":"Decoders",
+      "IsCollection":true
+    },
+    {
+      "Name":"MEMORY",
+      "IsCollection":true
+    },
+    {
+      "Name":"Toggles",
+      "IsCollection":true
+    },
+    {
+      "Name":"BUS",
+      "IsCollection":true
+    },
+    {
+      "Name":"Arithmetic",
+      "IsCollection":true
+    },
+    {
+      "Name":"ALU",
+      "IsCollection":false
+    },
+    {
+      "Name":"CPU",
+      "IsCollection":false
+    },
+    {
+      "Name":"clocker",
+      "IsCollection":false
+    }
+  ],
+  "ChipCollections":[
+    {
+      "Chips":["CLOCK","PULSE","KEY","4x4-OR"],
+      "IsToggledOpen":true,
+      "Name":"BASIC"
+    },
+    {
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "IsToggledOpen":true,
+      "Name":"IN/OUT"
+    },
+    {
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
+      "IsToggledOpen":true,
+      "Name":"MERGE/SPLIT"
+    },
+    {
+      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "IsToggledOpen":true,
+      "Name":"BUS"
+    },
+    {
+      "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
+      "IsToggledOpen":true,
+      "Name":"DISPLAY"
+    },
+    {
+      "Chips":["3-STATE BUFFER","Data Latch","ROM 256×16","4-256 RAM","4-256 Synchronous","1 bit Register","4 bit Register","8 bit register","256-4 ROM","4 bit Async block","16 block row","shift buffer"],
+      "IsToggledOpen":true,
+      "Name":"MEMORY"
+    },
+    {
+      "Chips":["2-4 Decoder","3-8 Decoder","4-16 Decoder"],
+      "IsToggledOpen":true,
+      "Name":"Decoders"
+    },
+    {
+      "Chips":["4-Toggle","8-Toggle","4-Enable","8-enable"],
+      "IsToggledOpen":true,
+      "Name":"Toggles"
+    },
+    {
+      "Chips":["4-OR","NAND","AND","OR","XOR","NOT","NOR"],
+      "IsToggledOpen":false,
+      "Name":"Basic Gates"
+    },
+    {
+      "Chips":["8 bit offsetter","Bit shifter","Add+S 8","Negate 8","Negate 4","Not 4","Add+S 4","add 8","add 4","Add 1","4 bit eqals","ALU"],
+      "IsToggledOpen":true,
+      "Name":"Arithmetic"
+    },
+    {
+      "Chips":["BUZZER","Instruction module","6cycle clock","4 Bit 3 state buffer","CU","CPU","4 register block","2 cycle clock","6 cycle clock","Logical AND","Logical OR","Logical XOR","Logical Compare","8 register block","Memory Manager","push OP","ReadRAM OP","3 cycle clock","OP ALU","Offsetter","OP JUMP"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    },
+    {
+      "Chips":["MOV OP","NO-OP","OP Add+S","MOVRAW OP"],
+      "IsToggledOpen":true,
+      "Name":"OPs"
+    }
+  ]
+}
