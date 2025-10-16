@@ -10,8 +10,10 @@ opcodes = {"nop" : "0000", "halt" : "0001", "write":"0010", "read" : "0011", "ad
            "xor" : "1000", "mov" : "1001", "movraw" : "1010", "cmp": "1011", "shift" : "1100", "jmp" : "1101"}
 
 registers = {"r0" : "0000", "r1" : "0001", "r2":"0010", "r3" : "0011", "r4" : "0100", "r5" : "0101", "r6" : "0110", "r7" : "0111", 
-             "invalid" : "1000", "invalid" : "1001", "invalid" : "1010", "invalid" : "1011", "invalid" : "1100",
+             "invalid" : "1000", "invalid register" : "1001", "invalid register" : "1010", "invalid register" : "1011", "invalid register" : "1100",
              "rc": "1101", "rsl" : "1110", "rsh" : "1111"}
+
+functions = {}
 lineCounter = 0
 
 for argv in sys.argv:
@@ -34,12 +36,24 @@ for line in linearr:
                 # redundant but will support inline comments
                 if (arg.startswith("//")):
                     break
+                elif (arg.startswith("def")):
+                    functions.update({splitLine[1] : lineCounter})
+                    # print(lineCounter)
+                    break
                 lineCounter +=1
                 code = opcodes.get(arg, "err")
                 if code == "err":
                     code = registers.get(arg, "err")
                 if code == "err":
-                    code = arg
+                    if functions.get(arg) != None:
+                        code = functions.get(arg)
+                    elif arg.startswith("0b"):
+                        code = arg.removeprefix('0b')
+                    elif (arg.isdigit== True):
+                        code = format(int(arg), '04b')
+                    
+                    else: 
+                        code = "ERROR"
                 if verbose: print(code, end=" ")
                 else: print(code)
             if (verbose): print("")

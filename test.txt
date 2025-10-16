@@ -40,6 +40,6 @@ shift r1 r2
 // 1101 jump. Jumps to offset pointer based on compare results( r1 is high order bits, r2 is low order bits)
 jmp r1 r2
 
-// 1110 unbound (halt)
+// 1110 unbound (halt) jump raw??
 
 // 1111 unbound (halt)
