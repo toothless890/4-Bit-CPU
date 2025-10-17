@@ -38,8 +38,9 @@ cmp r1 r2
 shift r1 r2
 
 // 1101 jump. Jumps to offset pointer based on compare results( r1 is high order bits, r2 is low order bits)
-jmp r1 r2
+jmp 0b0001 rsh rsl
 
-// 1110 unbound (halt) jump raw??
-
+def jest
+// 1110 jump to a raw value location 
+jmpraw 0b0001 jest
 // 1111 unbound (halt)

@@ -1,19 +1,38 @@
-movraw rc 0b1111 // enable carry
-movraw r0 0b0001 // r0, 1, 2 is x
-movraw r6 0b0100 // variable to control loop
-movraw rsh 0b0000 //
-movraw rsl 0b1111
-//loop begin
-// x+= y
-def fib
-add r0 r3 // make use of carry to use 3 registers per 'variable'
-add r1 r4
-add r2 r5
-// y = x
-mov r3 r0
-mov r4 r1
-mov r5 r2
+movraw rc 0b1111
+movraw r6 1 // 1 for everything
+// can halt program by jumping to rom 2 (opcode is 1)
+movraw r7 2 // 32 for rsh 
+movraw r5 4 // for checking max numbers
+movraw r0 1 // to get started
 
-cmp r2 r6
-jmp 0b0011 rsh rsl // jump to stack pos if less than or equal to control
-halt // stop after exectution
+def fibA
+add r0 r1
+write r0
+add rsl r6
+add rsh r4
+read r0
+add rsh r7
+read r1
+sub rsh r7
+add r2 r3
+mov r2 r3
+
+cmp rsl r4
+jmpraw 0b0010 fibA
+cmp rsh r6
+jmpraw 0b0010 fibA
+cmp r0 r4
+jmpraw 0b0100 0b0000 0b0110
+add rsh r7
+
+def fibB
+add r1 r0
+add rsh r7
+write r1
+add rsl r6
+read r1
+sub rsh r7
+add r2 r3
+mov r2 r3
+read r0
+jmpraw 0b1000 fibA

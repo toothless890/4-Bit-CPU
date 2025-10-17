@@ -7,7 +7,7 @@ f = open(filename, "r")
 linearr = f.read().split("\n")
 
 opcodes = {"nop" : "0000", "halt" : "0001", "write":"0010", "read" : "0011", "add" : "0100", "sub" : "0101", "and" : "0110", "or" : "0111", 
-           "xor" : "1000", "mov" : "1001", "movraw" : "1010", "cmp": "1011", "shift" : "1100", "jmp" : "1101"}
+           "xor" : "1000", "mov" : "1001", "movraw" : "1010", "cmp": "1011", "shift" : "1100", "jmp" : "1101", "jmpraw" : "1110"}
 
 registers = {"r0" : "0000", "r1" : "0001", "r2":"0010", "r3" : "0011", "r4" : "0100", "r5" : "0101", "r6" : "0110", "r7" : "0111", 
              "invalid" : "1000", "invalid register" : "1001", "invalid register" : "1010", "invalid register" : "1011", "invalid register" : "1100",
@@ -46,13 +46,18 @@ for line in linearr:
                     code = registers.get(arg, "err")
                 if code == "err":
                     if functions.get(arg) != None:
-                        code = functions.get(arg)
+                        raw =  functions.get(arg)
+                        bin = format(raw, '08b')
+                        if verbose: sep = " " 
+                        else: sep = "\n"
+                        code =  bin[:4] + sep + bin[4:]
                     elif arg.startswith("0b"):
                         code = arg.removeprefix('0b')
-                    elif (arg.isdigit== True):
+                    elif (arg.isdigit()):
                         code = format(int(arg), '04b')
                     
                     else: 
+                        print(arg)
                         code = "ERROR"
                 if verbose: print(code, end=" ")
                 else: print(code)
