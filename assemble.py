@@ -39,6 +39,7 @@ for line in linearr:
                 elif (arg.startswith("def")):
                     functions.update({splitLine[1] : lineCounter})
                     # print(lineCounter)
+                    
                     break
                 lineCounter +=1
                 code = opcodes.get(arg, "err")
@@ -51,6 +52,7 @@ for line in linearr:
                         if verbose: sep = " " 
                         else: sep = "\n"
                         code =  bin[:4] + sep + bin[4:]
+                        lineCounter +=1
                     elif arg.startswith("0b"):
                         code = arg.removeprefix('0b')
                     elif (arg.isdigit()):

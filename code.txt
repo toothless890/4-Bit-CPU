@@ -1,38 +1,67 @@
+// rsl is low order bits for the memory
+// rsh is the high order bits
+// read/write to memory do not increment stack pointer
+
 movraw rc 0b1111
 movraw r6 1 // 1 for everything
-// can halt program by jumping to rom 2 (opcode is 1)
-movraw r7 2 // 32 for rsh 
+movraw r7 2 // 32 for incrementing stack pointer high bits
 movraw r5 4 // for checking max numbers
 movraw r0 1 // to get started
 
 def fibA
-add r0 r1
-write r0
-add rsl r6
-add rsh r4
-read r0
-add rsh r7
-read r1
-sub rsh r7
-add r2 r3
-mov r2 r3
 
-cmp rsl r4
-jmpraw 0b0010 fibA
-cmp rsh r6
-jmpraw 0b0010 fibA
-cmp r0 r4
-jmpraw 0b0100 0b0000 0b0110
-add rsh r7
+add r0 r2 // add carry from last step
+movraw r2 0 // clear preserved carry
+add r0 r1 // add b to a
+add r2 r4 // preserve carry for next step
+write r0 // push
+add rsl r6 // rsl ++
+add rsh r4 // add zero to carry high stack pointer
+read r0 // load new a pointer
+or rsh r7 // add 2 to rsh
+read r1 // load new b pointer
+xor rsh r7 // remove the 2 from the rsh
+cmp rsh r6 // check if rsh 
+jmpraw 0b0010 fibA // if rsh >= 1 check if 
+cmp rsl rc
+jmpraw 0b0010 fibA // rsl <= 15 goto fib A
+//clear for fib B
+movraw rsh 0
+movraw rsl 0
+
+read r0
+or rsh r7
+
+read r1 // load new pointer
+add r2 r4 // clear the carry
+movraw r2 0
 
 def fibB
-add r1 r0
-add rsh r7
-write r1
-add rsl r6
-read r1
-sub rsh r7
-add r2 r3
-mov r2 r3
-read r0
-jmpraw 0b1000 fibA
+
+add r1 r2 // add carry
+movraw r2 0 // carry clear
+add r1 r0 // add a to b
+add r2 r4 // preserve carry for next step
+write r1 // push to stack
+add rsl r6 // increment rsl
+add rsh r4 // carry if rsh
+read r1 // pull new b pointer
+xor rsh r7 // set rsh to low
+read r0 // pull new a pointer
+cmp rsh r6 // check if needs to loop
+or rsh r7 // set rsh to high
+jmpraw 0b0010 fibB
+// after completing loops for both a and b
+// check if largest bit on a is greater than 4 and set back to normal
+movraw rsh 1 // set rsp to greatest a block
+movraw rsl 15
+read r0 // load into a reg
+cmp r0 r5 // check if its bigger than 4
+movraw rsh 2 // set high stack to 2
+movraw rsl 0 // set low stack pointer to 0
+read r1 // load pointer into reg b
+movraw rsh 0 // clear high stack pointer
+read r0 // load pointer into reg a
+movraw r2 0 // clear carry??? idk why i did this
+jmpraw 0b0010 fibA // jump back to start of loop if number won't overflow
+halt // else halt the program
