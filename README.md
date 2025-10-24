@@ -30,4 +30,7 @@ Assembler features include:
   
 <img width="1253" height="663" alt="{55447061-CD0F-4868-BA44-B2E9F49EE292}" src="https://github.com/user-attachments/assets/0c83b813-2a7a-47f7-88ee-ba87add2dc1d" />
 <img width="829" height="614" alt="{F5D9920B-B4F8-44B6-B738-93A4E87AAAF1}" src="https://github.com/user-attachments/assets/bf3a7e78-0d33-46c5-bdfa-5a43bf07a500" />
+Everything is constructed from NAND!
+<img width="889" height="458" alt="{76936B92-A840-457A-B0F1-82AFD97F67AA}" src="https://github.com/user-attachments/assets/a0a4a63e-ff45-4082-a8a1-adeb1c664df4" />
+<img width="603" height="235" alt="{1F07F70D-7645-49B2-8DF3-147EFF86442C}" src="https://github.com/user-attachments/assets/452d7a8f-e195-42b5-9d79-78185a27d4c9" />
 
