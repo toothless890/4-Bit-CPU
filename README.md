@@ -13,6 +13,14 @@ Program can be altered by opening "256-4 ROM" and then editing "ROM 256x16" then
 
 Assemble.py takes in a file with assembly code, and an optional -v flag that enables detailed output of the program (with verbose mode, the output cannot be directly pasted into the cpu)
 
+Operations include:
+  * Reading and writing to memory
+  * Adding and subtracting registers that support carrying to the next add instruction enabling addition with huge numbers (up to adding 2 512-bit integers together!) 
+  * Bitwise AND, OR, XOR operatiions
+  * Moving register and raw values
+  * Bitshifting left and right
+  * Conditional jumping
+
 Assembler features include:
 
   * comments: adding // at any point in a line will allow the rest of the line to be ignored
