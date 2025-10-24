@@ -1,7 +1,7 @@
 4-Bit Processor and custom assembler made with Sebastian Lague's Digital Logic Sim
 
 Instructions: 
-  1. Install Digital Logic Sim
+  1. Install Digital Logic Sim (https://sebastian.itch.io/digital-logic-sim)
   2. open data folder (Ctrl+Alt+Shift+O)
   3. Clone repository into current folder
   4. Rename repository to "Projects" overriding existing folder
