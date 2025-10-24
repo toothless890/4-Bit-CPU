@@ -1,0 +1,83 @@
+OP Code: 	Name:	Arguments:					Instruction length:
+0000		No-OP							RIP+4		=4/4	Do nothing- Wait 1 clock cycle
+0001 		Halt							RIP+4 		=4/4	Stop the program
+0010 		Write 	[ reg ]						RIP+4		=8/4	Write to memory at RAM address
+0011 		Read 	[ reg ] 					RIP+4+4		=8/4	Read from memory at RAM address
+0100		Add 	[ reg ] [ reg ] 				RIP+4+4+4	=12/4	Add second register into first
+0101 		Subtract[ reg ] [ reg ]					RIP+4+4+4	=12/4	Subtract 2nd reg from 1st
+0110 		AND 	[ reg ] [ reg ]					RIP+4+4+4	=12/4	Bitwise and 2nd reg int 1st
+0111 		OR 	[ reg ] [ reg ]					RIP+4+4+4	=12/4	Bitwise or 2nd reg into 1st
+1000 		XOR 	[ reg ] [ reg ]					RIP+4+4+4	=12/4	Bitwise xor 2nd reg into 1st
+1001 		Move 	[ reg ] [ reg ]					RIP+4+4+4	=12/4	Move 2nd reg value into 1st
+1010 		MovRaw 	[ reg ] [ value ] (4 bit value) 		RIP+4+4+4	=12/4	Move a 4-bit value into a reg
+1011 		compare [ reg ] [ reg ] | outputs to conditionals 	RIP+4+4+4	=12/4	Compare 2 regs- output to cond. flags
+1100 		Shift   [ reg ] [ reg ]	(signed int, +L* -R/)		RIP+4+4+4	=12/4	Bitshift - 2nd reg is signed int
+1101 		Jump    [ condition(4 bit flag)] [ regH ] [ regL ]	RIP+4+4+8	=16/4	Jump to a relative address *outdated
+1110		JumpRaw [ condition(4 bit flag)] [ rawH ] [ rawL ]	RIP+4+4+8	=16/4	Jump to an absolute address *optimal
+1111		No-OP (unimplemented) 
+
+
+instruction-4 register-4 value -4 address -8 
+8 bit address leveraged by using 2 registers to index.
+
+2 register operations put the result in the first register
+
+
+registers:	
+	
+	1111 RAM Address high
+	1110 RAM Address low
+	1101 Carry Flags 
+	 ...
+	0000
+	  -  General Purpose Registers
+	0011 
+Flags:
+	conditionals (4 Bits) [ always true][ greater than][ less than][ equals] (to check if r1 is less than r2 then 0010)
+	carry: ([none][none][none][adder carry input enable] on large additions, output the carry bit to this register(results 	greater than 16
+	
+To check condition flags, & the current state with the input. | the results together- if any flag matches, the result will be 1; perform jump. ie. if ANY of the enabled conditions match with the output conditional, the jump will execute
+	
+
+Instruction process:
+load instruction at instruction index (RIP) into instruction buffer (if 1111, load next 4 into instruction buffer 2 and so on)
+load applicable register or data buffers
+instruction buffer automatically enables the applicable section of the cpu and loads the applicable data on the following clock cycle
+result is sent onto the data line
+result gets written to desired register address
+RIP is incremented according to the instruction length
+read next instruction
+
+A special adder is used for adding the index pointer. 
+
+Ex: 	MovRaw A 1
+    	instruction = 1110 
+    	register buffer 1 = 0100, raw data buffer = 00000001
+	output buffer = raw data buffer
+	register 0100 = output buffer
+	RIP +=16
+
+
+NOT can be done as AND 0 (where 0 is a register  
+
+
+
+Memory:
+RAM x1, 256 nibbles
+ROM x1, 256 nibbles
+
+each memory location is a 4 bit chunk - 2^8 = 256 blocks of 4 bits
+average op uses 2 args per instruction, or 3 nibbles
+
+	
+
+proposed changes: 
+push/pop increment stack index
+instruction index is stored in a register too
+ex 1101, 1100, move carry flags to 1001
+output shift results to 1011, 1010
+Return capabilities
+Direct memory access and raw value operations
+
+
+
