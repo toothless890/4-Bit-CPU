@@ -10,7 +10,6 @@
   7. Clear the memory, enable "begin program", cycle the clock once, disable "Begin program", cycle clock until program completes
 
 ## For clarifications or further instructions on getting this working/reprogrammed, DM me on discord @toothless890, or submit an issue and I will get back to you asap 
-### Im not sure why github is saying im getting a lot of people downloading this repo, but if the stats are accurate, I would love to answer any questions people may have!
 
 Program can be altered by opening "256-4 ROM" and then editing "ROM 256x16" then pasting the results of the assembler as binary and saving the chip
 
